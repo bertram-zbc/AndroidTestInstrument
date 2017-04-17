@@ -1,0 +1,12 @@
+;./Constraints/com.test.baidumap.RegisterActivity/ void onClick(android.view.View)/0.stm2
+(declare-const userName String)
+(declare-const password1 String)
+(declare-const password2 String)
+(push)
+(assert (= userName ""))
+(assert (= password1 ""))
+(assert (= password2 ""))
+(assert (= password1 password2))
+(check-sat)
+(get-model)
+(pop)
