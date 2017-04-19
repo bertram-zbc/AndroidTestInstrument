@@ -1,6 +1,16 @@
 package com.bertram.test;
 
 import java.io.File;
+import java.util.ArrayList;
+
+class Name{
+	String name;
+	int id;
+	public Name(String n , int i) {
+		name = n;
+		id  = i;
+	}
+}
 
 public class Test1 {
 
@@ -36,7 +46,13 @@ public class Test1 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		aboutFile();
+		String s1 = "com.test.baidumap.RegisterActivity";
+		String s2 = "com.test.baidumap";
+		String []s = s1.split(s2);
+		System.out.println(s.length);
+		System.out.println(s[0]+"\t"+s[1]);
+		System.out.println(s2+"/"+s[1]);
+		
 		
 		
 	}

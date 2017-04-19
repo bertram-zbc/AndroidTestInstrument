@@ -23,6 +23,13 @@ public class Widget {
 		this.inputValue = "";
 	}
 	
+	public Widget(Widget widget) {
+		this.resource_id = widget.resource_id;
+		this.type = widget.type;
+		this.name = widget.name;
+		this.inputValue = widget.inputValue;
+	}
+
 	public void print(){
 		System.err.println(this.name + "\t" + this.inputValue);
 	}
